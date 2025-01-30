@@ -24,11 +24,15 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation("org.springframework.boot:spring-boot-starter-web")
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// ConfigurationProperties 사용을 위한 Annotation Processor 추가
+	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 }
 
 tasks.named('test') {
