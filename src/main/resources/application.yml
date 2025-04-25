@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dev_db
+    username: dev_user
+    password: dev_password
+
+custom:
+  app-name: "MyApp - Dev"
+  api-key: "dev-1234-5678"
+  feature-flag: true
